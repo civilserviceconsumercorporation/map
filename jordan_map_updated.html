@@ -1,0 +1,1950 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_abee0bcd99798f5c775c2d805cdc713a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_abee0bcd99798f5c775c2d805cdc713a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_abee0bcd99798f5c775c2d805cdc713a = L.map(
+                "map_abee0bcd99798f5c775c2d805cdc713a",
+                {
+                    center: [31.5, 35.9],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cf46c9b599c5b50c125493805e70f9c9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cf46c9b599c5b50c125493805e70f9c9.addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var tile_layer_fec5a710344e2983912b1484db875d4a = L.tileLayer(
+                "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+                {"attribution": "Map data \u00a9 OpenStreetMap contributors, CC-BY-SA, Imagery \u00a9 OpenTopoMap", "detectRetina": false, "maxZoom": 17, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_fec5a710344e2983912b1484db875d4a.addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            map_abee0bcd99798f5c775c2d805cdc713a.fitBounds(
+                [[29.185, 34.959], [33.375, 39.301]],
+                {}
+            );
+        
+    
+            var marker_e32f5a6a707f82dfcc6d70048af34a79 = L.marker(
+                [32.5164725703423, 35.9512667740419],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_4a63c0d6726c3340b450e23f621ff709 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e32f5a6a707f82dfcc6d70048af34a79.setIcon(icon_4a63c0d6726c3340b450e23f621ff709);
+        
+    
+        var popup_1eee6e8bdfd323a7111eca214d5f1cbd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c82f01572d41e54038fcc96a026b305d = $(`<div id="html_c82f01572d41e54038fcc96a026b305d" style="width: 100.0%; height: 100.0%;">             <b>سوق اربد</b><br>             مواقع و مساحات استثمار متوفرة: يوجد موقع خارج العهد ومساحات                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.5164725703423,35.9512667740419" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_1eee6e8bdfd323a7111eca214d5f1cbd.setContent(html_c82f01572d41e54038fcc96a026b305d);
+            
+        
+
+        marker_e32f5a6a707f82dfcc6d70048af34a79.bindPopup(popup_1eee6e8bdfd323a7111eca214d5f1cbd)
+        ;
+
+        
+    
+    
+            var marker_f3bac3a183b9bff274fb589e4f95499c = L.marker(
+                [32.558661329982, 35.8633496733034],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_c57d402aeeba258f8c4a8cf3fa149b47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f3bac3a183b9bff274fb589e4f95499c.setIcon(icon_c57d402aeeba258f8c4a8cf3fa149b47);
+        
+    
+        var popup_55280cd3509adbb90bc4571abdf56651 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4e4740a1b3e7fd3516c19545781599ad = $(`<div id="html_4e4740a1b3e7fd3516c19545781599ad" style="width: 100.0%; height: 100.0%;">             <b>سوق شرق اربد</b><br>             مواقع و مساحات استثمار متوفرة: مساحة ٢*٢ م داخل العهد                                        <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.558661329982,35.8633496733034" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_55280cd3509adbb90bc4571abdf56651.setContent(html_4e4740a1b3e7fd3516c19545781599ad);
+            
+        
+
+        marker_f3bac3a183b9bff274fb589e4f95499c.bindPopup(popup_55280cd3509adbb90bc4571abdf56651)
+        ;
+
+        
+    
+    
+            var marker_440e05c24ad6532b114a8d61f403e728 = L.marker(
+                [32.4872343974761, 35.8778124062873],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_9088e8ef694d5b68617dea5ae2fb09cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_440e05c24ad6532b114a8d61f403e728.setIcon(icon_9088e8ef694d5b68617dea5ae2fb09cb);
+        
+    
+        var popup_417e5654328c3cebd4001ab5ec5cbc85 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5e61114b81c4739c9d6f6c32de311b92 = $(`<div id="html_5e61114b81c4739c9d6f6c32de311b92" style="width: 100.0%; height: 100.0%;">             <b>الحصن </b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.4872343974761,35.8778124062873" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_417e5654328c3cebd4001ab5ec5cbc85.setContent(html_5e61114b81c4739c9d6f6c32de311b92);
+            
+        
+
+        marker_440e05c24ad6532b114a8d61f403e728.bindPopup(popup_417e5654328c3cebd4001ab5ec5cbc85)
+        ;
+
+        
+    
+    
+            var marker_f5c8d98a283e28d23a6ea8aa515f1d5f = L.marker(
+                [32.4828699795841, 35.674871084798],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_261483b171b34265b8acb4412fe43fd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f5c8d98a283e28d23a6ea8aa515f1d5f.setIcon(icon_261483b171b34265b8acb4412fe43fd2);
+        
+    
+        var popup_d7db327d465fdc2cdaa2256258b0df08 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8a45f9f2ead5a3a36dec9dad0e204255 = $(`<div id="html_8a45f9f2ead5a3a36dec9dad0e204255" style="width: 100.0%; height: 100.0%;">             <b>الكوره </b><br>             مواقع و مساحات استثمار متوفرة: ....                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.4828699795841,35.674871084798" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_d7db327d465fdc2cdaa2256258b0df08.setContent(html_8a45f9f2ead5a3a36dec9dad0e204255);
+            
+        
+
+        marker_f5c8d98a283e28d23a6ea8aa515f1d5f.bindPopup(popup_d7db327d465fdc2cdaa2256258b0df08)
+        ;
+
+        
+    
+    
+            var marker_2f0603c63f73735a2ca1171f26594d2a = L.marker(
+                [32.637669, 35.744757],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_73d1c5acd91abc864f0ea8a524c891f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2f0603c63f73735a2ca1171f26594d2a.setIcon(icon_73d1c5acd91abc864f0ea8a524c891f2);
+        
+    
+        var popup_fdef4f0d8c4d48e6c44d84fbe5955987 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ebee91567e67e09e1ee15baa784b0039 = $(`<div id="html_ebee91567e67e09e1ee15baa784b0039" style="width: 100.0%; height: 100.0%;">             <b>بني كنانه </b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد مساحات              <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.637669,35.744757" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_fdef4f0d8c4d48e6c44d84fbe5955987.setContent(html_ebee91567e67e09e1ee15baa784b0039);
+            
+        
+
+        marker_2f0603c63f73735a2ca1171f26594d2a.bindPopup(popup_fdef4f0d8c4d48e6c44d84fbe5955987)
+        ;
+
+        
+    
+    
+            var marker_33a306638c068a179c987ef5afffe7ca = L.marker(
+                [32.46959, 35.79524],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_6bfcb0330393efa0cd2058d4239bb8ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_33a306638c068a179c987ef5afffe7ca.setIcon(icon_6bfcb0330393efa0cd2058d4239bb8ca);
+        
+    
+        var popup_9e0367034c95089f2100d594ffa3c61a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_23c7f72170492fc4823a596753a782e6 = $(`<div id="html_23c7f72170492fc4823a596753a782e6" style="width: 100.0%; height: 100.0%;">             <b>المزار الشمالي</b><br>             مواقع و مساحات استثمار متوفرة: ....                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.46959,35.79524" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_9e0367034c95089f2100d594ffa3c61a.setContent(html_23c7f72170492fc4823a596753a782e6);
+            
+        
+
+        marker_33a306638c068a179c987ef5afffe7ca.bindPopup(popup_9e0367034c95089f2100d594ffa3c61a)
+        ;
+
+        
+    
+    
+            var marker_13b17d7c9d90461c7267e91172f4fa81 = L.marker(
+                [32.44787, 35.59505],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_3857a12b1a7814d1541fd8bb1eb44b72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_13b17d7c9d90461c7267e91172f4fa81.setIcon(icon_3857a12b1a7814d1541fd8bb1eb44b72);
+        
+    
+        var popup_021951222a8ce1e9a68e8e98f3c6b6e2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a7c19932cef77ac95a093974f16b520e = $(`<div id="html_a7c19932cef77ac95a093974f16b520e" style="width: 100.0%; height: 100.0%;">             <b>المشارع</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد مساحات             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.44787,35.59505" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_021951222a8ce1e9a68e8e98f3c6b6e2.setContent(html_a7c19932cef77ac95a093974f16b520e);
+            
+        
+
+        marker_13b17d7c9d90461c7267e91172f4fa81.bindPopup(popup_021951222a8ce1e9a68e8e98f3c6b6e2)
+        ;
+
+        
+    
+    
+            var marker_7e76a51cab94fec4be4e544c7af2a641 = L.marker(
+                [32.55389, 35.84162],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_14299b882519a72155d5d2d8ba01394e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7e76a51cab94fec4be4e544c7af2a641.setIcon(icon_14299b882519a72155d5d2d8ba01394e);
+        
+    
+        var popup_2f374dbb561d0c067f3c7993f40caf5f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ab6ec17d0ab0d864b25c94291839ec74 = $(`<div id="html_ab6ec17d0ab0d864b25c94291839ec74" style="width: 100.0%; height: 100.0%;">             <b>الشونه الشمالية</b><br>             مواقع و مساحات استثمار متوفرة: ....                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.55389,35.84162" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_2f374dbb561d0c067f3c7993f40caf5f.setContent(html_ab6ec17d0ab0d864b25c94291839ec74);
+            
+        
+
+        marker_7e76a51cab94fec4be4e544c7af2a641.bindPopup(popup_2f374dbb561d0c067f3c7993f40caf5f)
+        ;
+
+        
+    
+    
+            var marker_0270980045317caeeaaa9dad603f24ef = L.marker(
+                [32.55943, 35.99538],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_56d9c3df381c382692dd94d9e58e7e44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0270980045317caeeaaa9dad603f24ef.setIcon(icon_56d9c3df381c382692dd94d9e58e7e44);
+        
+    
+        var popup_6264a5399983d5f4978ebbd8d8704885 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e2350b5d1efc0ab7d699adcf9b0ab292 = $(`<div id="html_e2350b5d1efc0ab7d699adcf9b0ab292" style="width: 100.0%; height: 100.0%;">             <b>الرمثا</b><br>             مواقع و مساحات استثمار متوفرة: ....             <br>مواقع / مساحات مستغله حاليا: موقع مستغل                          <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.55943,35.99538" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_6264a5399983d5f4978ebbd8d8704885.setContent(html_e2350b5d1efc0ab7d699adcf9b0ab292);
+            
+        
+
+        marker_0270980045317caeeaaa9dad603f24ef.bindPopup(popup_6264a5399983d5f4978ebbd8d8704885)
+        ;
+
+        
+    
+    
+            var marker_015d8c024bc1d141c9e7578d763dc40e = L.marker(
+                [32.5796, 35.86996],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_d5415e1c5470824650259397e7e249e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_015d8c024bc1d141c9e7578d763dc40e.setIcon(icon_d5415e1c5470824650259397e7e249e2);
+        
+    
+        var popup_79753c738752f65c70054a6a7db96cdb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_30e0b277c770952f1cb20799150ad4ad = $(`<div id="html_30e0b277c770952f1cb20799150ad4ad" style="width: 100.0%; height: 100.0%;">             <b>النعيمة</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.5796,35.86996" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_79753c738752f65c70054a6a7db96cdb.setContent(html_30e0b277c770952f1cb20799150ad4ad);
+            
+        
+
+        marker_015d8c024bc1d141c9e7578d763dc40e.bindPopup(popup_79753c738752f65c70054a6a7db96cdb)
+        ;
+
+        
+    
+    
+            var marker_c7eddbe15cb7973de10916ccd1bed5ad = L.marker(
+                [32.6481211762955, 35.9414076758119],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_228c1d77a73d0f217060f4d1f7970299 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c7eddbe15cb7973de10916ccd1bed5ad.setIcon(icon_228c1d77a73d0f217060f4d1f7970299);
+        
+    
+        var popup_5e17a27d747a71c3564575d20d6665ea = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6eece681d648f8b3e9ad70fc7bbb0c88 = $(`<div id="html_6eece681d648f8b3e9ad70fc7bbb0c88" style="width: 100.0%; height: 100.0%;">             <b>الشجرة</b><br>             مواقع و مساحات استثمار متوفرة: ....                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.6481211762955,35.9414076758119" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_5e17a27d747a71c3564575d20d6665ea.setContent(html_6eece681d648f8b3e9ad70fc7bbb0c88);
+            
+        
+
+        marker_c7eddbe15cb7973de10916ccd1bed5ad.bindPopup(popup_5e17a27d747a71c3564575d20d6665ea)
+        ;
+
+        
+    
+    
+            var marker_595116abf1235dff1b3405d258e1bfe2 = L.marker(
+                [32.5605208497324, 35.8433642637568],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_a955c34d0999abfcd93086928e634b8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_595116abf1235dff1b3405d258e1bfe2.setIcon(icon_a955c34d0999abfcd93086928e634b8f);
+        
+    
+        var popup_05efca5bfea21e2d5dd3b220e92a1a4d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_54152831eb9649ca0e5303a3b5df5c95 = $(`<div id="html_54152831eb9649ca0e5303a3b5df5c95" style="width: 100.0%; height: 100.0%;">             <b>برقش</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.5605208497324,35.8433642637568" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_05efca5bfea21e2d5dd3b220e92a1a4d.setContent(html_54152831eb9649ca0e5303a3b5df5c95);
+            
+        
+
+        marker_595116abf1235dff1b3405d258e1bfe2.bindPopup(popup_05efca5bfea21e2d5dd3b220e92a1a4d)
+        ;
+
+        
+    
+    
+            var marker_deda3a63d57928ad0875e8c13b24bcf9 = L.marker(
+                [32.59828, 35.7124],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_d3dbd246bc961d3f91546aa9f6a3ef2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_deda3a63d57928ad0875e8c13b24bcf9.setIcon(icon_d3dbd246bc961d3f91546aa9f6a3ef2e);
+        
+    
+        var popup_25c1b7ff984a1ffdacad22c4b300a609 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fb7011a1d2511988946eff4b809f3e06 = $(`<div id="html_fb7011a1d2511988946eff4b809f3e06" style="width: 100.0%; height: 100.0%;">             <b>كفر اسد </b><br>             مواقع و مساحات استثمار متوفرة: تم الرد فاكس                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.59828,35.7124" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_25c1b7ff984a1ffdacad22c4b300a609.setContent(html_fb7011a1d2511988946eff4b809f3e06);
+            
+        
+
+        marker_deda3a63d57928ad0875e8c13b24bcf9.bindPopup(popup_25c1b7ff984a1ffdacad22c4b300a609)
+        ;
+
+        
+    
+    
+            var marker_1425f48385a4cc2ad0d60d73dbe87515 = L.marker(
+                [32.56795, 35.824],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_87be01fc82f5e996158a2bbec543cd1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1425f48385a4cc2ad0d60d73dbe87515.setIcon(icon_87be01fc82f5e996158a2bbec543cd1a);
+        
+    
+        var popup_153b2a8b1c22bd807bd2c266b40477c6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_46eb306e1781de4c701f9b2dda684cc1 = $(`<div id="html_46eb306e1781de4c701f9b2dda684cc1" style="width: 100.0%; height: 100.0%;">             <b>بيت يافا</b><br>             مواقع و مساحات استثمار متوفرة: ....                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.56795,35.824" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_153b2a8b1c22bd807bd2c266b40477c6.setContent(html_46eb306e1781de4c701f9b2dda684cc1);
+            
+        
+
+        marker_1425f48385a4cc2ad0d60d73dbe87515.bindPopup(popup_153b2a8b1c22bd807bd2c266b40477c6)
+        ;
+
+        
+    
+    
+            var marker_88f2ea4d687dc651ecd8d7d22ac172b0 = L.marker(
+                [32.3345944996077, 36.2006295222782],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_d48511785726b4d6783e1b9ccea1fe68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_88f2ea4d687dc651ecd8d7d22ac172b0.setIcon(icon_d48511785726b4d6783e1b9ccea1fe68);
+        
+    
+        var popup_fc29ada1bbbc809b9f09e1bbed4f330b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_68ecd0d74a25c78a4bec26853a5bc70a = $(`<div id="html_68ecd0d74a25c78a4bec26853a5bc70a" style="width: 100.0%; height: 100.0%;">             <b>المفرق</b><br>             مواقع و مساحات استثمار متوفرة: السوق قيد النقل الى مبنى جديد                                        <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.3345944996077,36.2006295222782" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_fc29ada1bbbc809b9f09e1bbed4f330b.setContent(html_68ecd0d74a25c78a4bec26853a5bc70a);
+            
+        
+
+        marker_88f2ea4d687dc651ecd8d7d22ac172b0.bindPopup(popup_fc29ada1bbbc809b9f09e1bbed4f330b)
+        ;
+
+        
+    
+    
+            var marker_3430672f69eb6ade10de3e77bfdbff79 = L.marker(
+                [32.1776614447358, 36.3026405040027],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_bd2923e3265f0abb35c2e7e00ef509bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3430672f69eb6ade10de3e77bfdbff79.setIcon(icon_bd2923e3265f0abb35c2e7e00ef509bf);
+        
+    
+        var popup_50d613f8ef56bebb086db0512e0ea7f5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a5c9e7eb2e40d7dbd536911e2adffbdd = $(`<div id="html_a5c9e7eb2e40d7dbd536911e2adffbdd" style="width: 100.0%; height: 100.0%;">             <b>الخالدية </b><br>             مواقع و مساحات استثمار متوفرة: ....                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.1776614447358,36.3026405040027" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_50d613f8ef56bebb086db0512e0ea7f5.setContent(html_a5c9e7eb2e40d7dbd536911e2adffbdd);
+            
+        
+
+        marker_3430672f69eb6ade10de3e77bfdbff79.bindPopup(popup_50d613f8ef56bebb086db0512e0ea7f5)
+        ;
+
+        
+    
+    
+            var marker_2007bb4da8e3795923c0f66e9af3ad39 = L.marker(
+                [32.5014506697043, 38.203181123303],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_9b6cf527739eabac8e046354c112bf31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2007bb4da8e3795923c0f66e9af3ad39.setIcon(icon_9b6cf527739eabac8e046354c112bf31);
+        
+    
+        var popup_a6a8bbc13a809bfa8a01dce93077eb27 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_57990a3f54aef2662933046aa6923cec = $(`<div id="html_57990a3f54aef2662933046aa6923cec" style="width: 100.0%; height: 100.0%;">             <b>الرويشد</b><br>             مواقع و مساحات استثمار متوفرة: ....                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.5014506697043,38.203181123303" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_a6a8bbc13a809bfa8a01dce93077eb27.setContent(html_57990a3f54aef2662933046aa6923cec);
+            
+        
+
+        marker_2007bb4da8e3795923c0f66e9af3ad39.bindPopup(popup_a6a8bbc13a809bfa8a01dce93077eb27)
+        ;
+
+        
+    
+    
+            var marker_07e49d4ee2cc73b2ef606fb5bdacd227 = L.marker(
+                [32.3139462075284, 36.3021148026828],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_937b64d851f2ef0f56b462e9b8ce49dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_07e49d4ee2cc73b2ef606fb5bdacd227.setIcon(icon_937b64d851f2ef0f56b462e9b8ce49dc);
+        
+    
+        var popup_7edda2f9299330cdea64a737cc480bc6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8c695e7a8faf63267161877c51fb4627 = $(`<div id="html_8c695e7a8faf63267161877c51fb4627" style="width: 100.0%; height: 100.0%;">             <b>الزعتري</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.3139462075284,36.3021148026828" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_7edda2f9299330cdea64a737cc480bc6.setContent(html_8c695e7a8faf63267161877c51fb4627);
+            
+        
+
+        marker_07e49d4ee2cc73b2ef606fb5bdacd227.bindPopup(popup_7edda2f9299330cdea64a737cc480bc6)
+        ;
+
+        
+    
+    
+            var marker_d5a8180dc168b7bb2ffbd4a15071c0d4 = L.marker(
+                [32.234624111126, 36.0874789040809],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_eed9b3215c424968dbd7cf4511d11f37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d5a8180dc168b7bb2ffbd4a15071c0d4.setIcon(icon_eed9b3215c424968dbd7cf4511d11f37);
+        
+    
+        var popup_1e6680ea394e0118961834f2887fb205 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_87931f7624c10b0de6e408248a4e4815 = $(`<div id="html_87931f7624c10b0de6e408248a4e4815" style="width: 100.0%; height: 100.0%;">             <b>بلعما</b><br>             مواقع و مساحات استثمار متوفرة: ....                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.234624111126,36.0874789040809" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_1e6680ea394e0118961834f2887fb205.setContent(html_87931f7624c10b0de6e408248a4e4815);
+            
+        
+
+        marker_d5a8180dc168b7bb2ffbd4a15071c0d4.bindPopup(popup_1e6680ea394e0118961834f2887fb205)
+        ;
+
+        
+    
+    
+            var marker_2bd91388fb66e60e0d855c6b907b85a4 = L.marker(
+                [32.3679261389052, 36.0796439241797],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_974f00ff55f5cd9202bf5f7c73756331 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2bd91388fb66e60e0d855c6b907b85a4.setIcon(icon_974f00ff55f5cd9202bf5f7c73756331);
+        
+    
+        var popup_284f3d9960eacfa451560cf4adfb4b61 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_919ceab10f8ec9e2678389d4044b3648 = $(`<div id="html_919ceab10f8ec9e2678389d4044b3648" style="width: 100.0%; height: 100.0%;">             <b>منشية بني حسن</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.3679261389052,36.0796439241797" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_284f3d9960eacfa451560cf4adfb4b61.setContent(html_919ceab10f8ec9e2678389d4044b3648);
+            
+        
+
+        marker_2bd91388fb66e60e0d855c6b907b85a4.bindPopup(popup_284f3d9960eacfa451560cf4adfb4b61)
+        ;
+
+        
+    
+    
+            var marker_c6da66474d30afe5f2d6ac29e279921f = L.marker(
+                [32.3165055507186, 36.6215272981448],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_ec67db19c2654338e4e768e4ddc5b376 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c6da66474d30afe5f2d6ac29e279921f.setIcon(icon_ec67db19c2654338e4e768e4ddc5b376);
+        
+    
+        var popup_fe3a219007bf04a3219e0bd56be9bec6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_58a9811a707effa923807edd7fa1e845 = $(`<div id="html_58a9811a707effa923807edd7fa1e845" style="width: 100.0%; height: 100.0%;">             <b>ام القطين</b><br>                          <br>مواقع / مساحات مستغله حاليا: مساحة مستغلة / شركة الاتحاد                          <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.3165055507186,36.6215272981448" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_fe3a219007bf04a3219e0bd56be9bec6.setContent(html_58a9811a707effa923807edd7fa1e845);
+            
+        
+
+        marker_c6da66474d30afe5f2d6ac29e279921f.bindPopup(popup_fe3a219007bf04a3219e0bd56be9bec6)
+        ;
+
+        
+    
+    
+            var marker_bebc21664f5e3d25e996928efa459a51 = L.marker(
+                [32.3317879706194, 35.7500671185993],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_30d63f2980d802f18223987a5d654bee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bebc21664f5e3d25e996928efa459a51.setIcon(icon_30d63f2980d802f18223987a5d654bee);
+        
+    
+        var popup_71d50f5c8e586d4662afe734f63edb3f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b98efdb4cbaa9c4fd12b558551fadc8a = $(`<div id="html_b98efdb4cbaa9c4fd12b558551fadc8a" style="width: 100.0%; height: 100.0%;">             <b>سوق عجلون</b><br>             مواقع و مساحات استثمار متوفرة: ....                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.3317879706194,35.7500671185993" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_71d50f5c8e586d4662afe734f63edb3f.setContent(html_b98efdb4cbaa9c4fd12b558551fadc8a);
+            
+        
+
+        marker_bebc21664f5e3d25e996928efa459a51.bindPopup(popup_71d50f5c8e586d4662afe734f63edb3f)
+        ;
+
+        
+    
+    
+            var marker_aeaf8d99637974fe198b24e939ed862f = L.marker(
+                [32.3005815480024, 35.702764664391],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_dceb992664c4d79d5676cc393d7d4475 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aeaf8d99637974fe198b24e939ed862f.setIcon(icon_dceb992664c4d79d5676cc393d7d4475);
+        
+    
+        var popup_3446592f1c04bfbaa39afc67d230a6cb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b857fb885766aae66cda8d19187c9e95 = $(`<div id="html_b857fb885766aae66cda8d19187c9e95" style="width: 100.0%; height: 100.0%;">             <b>سوق كفرنجة</b><br>                          <br>مواقع / مساحات مستغله حاليا: موقع مستغل                          <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.3005815480024,35.702764664391" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_3446592f1c04bfbaa39afc67d230a6cb.setContent(html_b857fb885766aae66cda8d19187c9e95);
+            
+        
+
+        marker_aeaf8d99637974fe198b24e939ed862f.bindPopup(popup_3446592f1c04bfbaa39afc67d230a6cb)
+        ;
+
+        
+    
+    
+            var marker_cf01d135241c737633366b56f39f0eb0 = L.marker(
+                [32.3059713387331, 35.7245008171637],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_c37df501ce511c4896cc574ae2bcaea2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_cf01d135241c737633366b56f39f0eb0.setIcon(icon_c37df501ce511c4896cc574ae2bcaea2);
+        
+    
+        var popup_cca383e36d7fd898911b7f2accae7db0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b83b018470827d2e86048312a8714f7f = $(`<div id="html_b83b018470827d2e86048312a8714f7f" style="width: 100.0%; height: 100.0%;">             <b>سوق عيين</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.3059713387331,35.7245008171637" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_cca383e36d7fd898911b7f2accae7db0.setContent(html_b83b018470827d2e86048312a8714f7f);
+            
+        
+
+        marker_cf01d135241c737633366b56f39f0eb0.bindPopup(popup_cca383e36d7fd898911b7f2accae7db0)
+        ;
+
+        
+    
+    
+            var marker_8143b3d9f0acaa3586068329bc311c83 = L.marker(
+                [32.2768238809875, 35.8909047355699],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_9033e2a16ac22297e0b04eb49e13d86f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_8143b3d9f0acaa3586068329bc311c83.setIcon(icon_9033e2a16ac22297e0b04eb49e13d86f);
+        
+    
+        var popup_e8824a157ffbc71a8cfb0d57768bce4e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a0856937aab3b2ede131ac6defcd5bdb = $(`<div id="html_a0856937aab3b2ede131ac6defcd5bdb" style="width: 100.0%; height: 100.0%;">             <b>سوق جرش</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.2768238809875,35.8909047355699" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_e8824a157ffbc71a8cfb0d57768bce4e.setContent(html_a0856937aab3b2ede131ac6defcd5bdb);
+            
+        
+
+        marker_8143b3d9f0acaa3586068329bc311c83.bindPopup(popup_e8824a157ffbc71a8cfb0d57768bce4e)
+        ;
+
+        
+    
+    
+            var marker_ce3347e86d008a0ba885558a89bda030 = L.marker(
+                [31.9859308972469, 35.9764597855819],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_4da6c12fec21a876ce1442bb17e894bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ce3347e86d008a0ba885558a89bda030.setIcon(icon_4da6c12fec21a876ce1442bb17e894bb);
+        
+    
+        var popup_ae85934d52ba831273aecd86e8743e92 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cc7e90decb0cb8987e282b917376cfae = $(`<div id="html_cc7e90decb0cb8987e282b917376cfae" style="width: 100.0%; height: 100.0%;">             <b>سوق عين غزال</b><br>             مواقع و مساحات استثمار متوفرة: متوفر مواقع و مساحات             <br>مواقع / مساحات مستغله حاليا: مواقع مستغلة                          <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.9859308972469,35.9764597855819" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_ae85934d52ba831273aecd86e8743e92.setContent(html_cc7e90decb0cb8987e282b917376cfae);
+            
+        
+
+        marker_ce3347e86d008a0ba885558a89bda030.bindPopup(popup_ae85934d52ba831273aecd86e8743e92)
+        ;
+
+        
+    
+    
+            var marker_34f00eabaaab50a0e6ad4994f19940e4 = L.marker(
+                [32.0295656406406, 35.8611446679428],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_b63ca1402950c2876e8adeabcb385689 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_34f00eabaaab50a0e6ad4994f19940e4.setIcon(icon_b63ca1402950c2876e8adeabcb385689);
+        
+    
+        var popup_4c6969e9afafbbe50772619d3e59ceb1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ae31777f9db79f370f841c8a44ccf764 = $(`<div id="html_ae31777f9db79f370f841c8a44ccf764" style="width: 100.0%; height: 100.0%;">             <b>سوق الجبيهه</b><br>             مواقع و مساحات استثمار متوفرة: تم الرد فاكس             <br>مواقع / مساحات مستغله حاليا: مواقع مستغلة                          <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.0295656406406,35.8611446679428" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_4c6969e9afafbbe50772619d3e59ceb1.setContent(html_ae31777f9db79f370f841c8a44ccf764);
+            
+        
+
+        marker_34f00eabaaab50a0e6ad4994f19940e4.bindPopup(popup_4c6969e9afafbbe50772619d3e59ceb1)
+        ;
+
+        
+    
+    
+            var marker_64e3cb4480a8ce4c0a26f48003c6c857 = L.marker(
+                [31.8987506605678, 35.9309112633163],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_bc8d497a415c69bed15f1fa57c389160 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_64e3cb4480a8ce4c0a26f48003c6c857.setIcon(icon_bc8d497a415c69bed15f1fa57c389160);
+        
+    
+        var popup_3b0e1f1d63656afe3a0d02a38ebfa0cc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e7b190ea003193d66fa4dc17fccb3825 = $(`<div id="html_e7b190ea003193d66fa4dc17fccb3825" style="width: 100.0%; height: 100.0%;">             <b>سوق الجويدة</b><br>             مواقع و مساحات استثمار متوفرة: ملحمة/ البان واجبان مساحة٤*٤ خارج العهد                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.8987506605678,35.9309112633163" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_3b0e1f1d63656afe3a0d02a38ebfa0cc.setContent(html_e7b190ea003193d66fa4dc17fccb3825);
+            
+        
+
+        marker_64e3cb4480a8ce4c0a26f48003c6c857.bindPopup(popup_3b0e1f1d63656afe3a0d02a38ebfa0cc)
+        ;
+
+        
+    
+    
+            var marker_4dff8503cbac48112db8da35c8b9e1e7 = L.marker(
+                [31.8721798742444, 36.00325662308],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_eeb770127d68bacac9c656ad08790094 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_4dff8503cbac48112db8da35c8b9e1e7.setIcon(icon_eeb770127d68bacac9c656ad08790094);
+        
+    
+        var popup_7415363ce765bda8f799d7d0a0ecefa3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b9c0feb1e863604bc3dcaa3f6fcbd881 = $(`<div id="html_b9c0feb1e863604bc3dcaa3f6fcbd881" style="width: 100.0%; height: 100.0%;">             <b>سوق سحاب</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.8721798742444,36.00325662308" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_7415363ce765bda8f799d7d0a0ecefa3.setContent(html_b9c0feb1e863604bc3dcaa3f6fcbd881);
+            
+        
+
+        marker_4dff8503cbac48112db8da35c8b9e1e7.bindPopup(popup_7415363ce765bda8f799d7d0a0ecefa3)
+        ;
+
+        
+    
+    
+            var marker_33544b21141f44a7b975fb391072e807 = L.marker(
+                [31.9476567015047, 35.9150786092645],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_e52a04580a5a89610b25b019a44f8315 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_33544b21141f44a7b975fb391072e807.setIcon(icon_e52a04580a5a89610b25b019a44f8315);
+        
+    
+        var popup_8a2c069060b8e19241ef618fe4855be5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_02d2eeadfa66696463fda6d4b183b2b0 = $(`<div id="html_02d2eeadfa66696463fda6d4b183b2b0" style="width: 100.0%; height: 100.0%;">             <b>سوق راس العين</b><br>             مواقع و مساحات استثمار متوفرة: متوفر مساحة 144 م خارج العهده             <br>مواقع / مساحات مستغله حاليا: موقع مستغل                          <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.9476567015047,35.9150786092645" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_8a2c069060b8e19241ef618fe4855be5.setContent(html_02d2eeadfa66696463fda6d4b183b2b0);
+            
+        
+
+        marker_33544b21141f44a7b975fb391072e807.bindPopup(popup_8a2c069060b8e19241ef618fe4855be5)
+        ;
+
+        
+    
+    
+            var marker_b7fb0b5c49727f9357e6ebe1f4b7706f = L.marker(
+                [31.955000330953, 35.9106335016682],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_95726dfe301f6d1ebde79d2f63b8d119 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b7fb0b5c49727f9357e6ebe1f4b7706f.setIcon(icon_95726dfe301f6d1ebde79d2f63b8d119);
+        
+    
+        var popup_5146ea9ef396d04f20494c74312e5ace = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_55295ee24e9f6eb398c3b877863bd87d = $(`<div id="html_55295ee24e9f6eb398c3b877863bd87d" style="width: 100.0%; height: 100.0%;">             <b>سوق بيادر وادي السير</b><br>             مواقع و مساحات استثمار متوفرة: طابق ثاني نادي رياضي ٥٠٠ م                                        <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.955000330953,35.9106335016682" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_5146ea9ef396d04f20494c74312e5ace.setContent(html_55295ee24e9f6eb398c3b877863bd87d);
+            
+        
+
+        marker_b7fb0b5c49727f9357e6ebe1f4b7706f.bindPopup(popup_5146ea9ef396d04f20494c74312e5ace)
+        ;
+
+        
+    
+    
+            var marker_217d705fa967c6693c89ed3a398c3979 = L.marker(
+                [31.89559, 35.85308],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_2dd98bd95981e4720affe097bf1d304d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_217d705fa967c6693c89ed3a398c3979.setIcon(icon_2dd98bd95981e4720affe097bf1d304d);
+        
+    
+        var popup_89689657b698a39a673820ab15c7c5db = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_529c8c1825adc6537a8e228536556527 = $(`<div id="html_529c8c1825adc6537a8e228536556527" style="width: 100.0%; height: 100.0%;">             <b>سوق مرج الحمام</b><br>                                                    <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.89559,35.85308" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_89689657b698a39a673820ab15c7c5db.setContent(html_529c8c1825adc6537a8e228536556527);
+            
+        
+
+        marker_217d705fa967c6693c89ed3a398c3979.bindPopup(popup_89689657b698a39a673820ab15c7c5db)
+        ;
+
+        
+    
+    
+            var marker_2565087aca68ab7623f67ab57a32a4f7 = L.marker(
+                [31.8742027472327, 35.817743238653],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_4419b71adb2369da93bdac7659bf7941 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2565087aca68ab7623f67ab57a32a4f7.setIcon(icon_4419b71adb2369da93bdac7659bf7941);
+        
+    
+        var popup_0256e3935f82ba4866e9a6901647f450 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e13d2e0c2b89c6a1e1893fefdce2e906 = $(`<div id="html_e13d2e0c2b89c6a1e1893fefdce2e906" style="width: 100.0%; height: 100.0%;">             <b>سوق ناعور</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد              <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.8742027472327,35.817743238653" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_0256e3935f82ba4866e9a6901647f450.setContent(html_e13d2e0c2b89c6a1e1893fefdce2e906);
+            
+        
+
+        marker_2565087aca68ab7623f67ab57a32a4f7.bindPopup(popup_0256e3935f82ba4866e9a6901647f450)
+        ;
+
+        
+    
+    
+            var marker_452ea00d4335c5d53897e5082a24078d = L.marker(
+                [32.083572759691, 36.083879552855],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_116937dc65e7fa8e22f956e65c5974a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_452ea00d4335c5d53897e5082a24078d.setIcon(icon_116937dc65e7fa8e22f956e65c5974a9);
+        
+    
+        var popup_af17759dd382251e375f41affdd63b48 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b24112f7b1540ba03cba42c1d323869f = $(`<div id="html_b24112f7b1540ba03cba42c1d323869f" style="width: 100.0%; height: 100.0%;">             <b>الزرقاء الاول</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.083572759691,36.083879552855" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_af17759dd382251e375f41affdd63b48.setContent(html_b24112f7b1540ba03cba42c1d323869f);
+            
+        
+
+        marker_452ea00d4335c5d53897e5082a24078d.bindPopup(popup_af17759dd382251e375f41affdd63b48)
+        ;
+
+        
+    
+    
+            var marker_0e647e3372fb417606cbc3aa49d3f83b = L.marker(
+                [32.090628404273, 36.0816733162595],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_a4d3efb7699141d37dc4734f77c9414d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_0e647e3372fb417606cbc3aa49d3f83b.setIcon(icon_a4d3efb7699141d37dc4734f77c9414d);
+        
+    
+        var popup_ff5c26b051879f91acc0c8ab745c4c7e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9dfe36edabff8009a88a89fb8cfe77ed = $(`<div id="html_9dfe36edabff8009a88a89fb8cfe77ed" style="width: 100.0%; height: 100.0%;">             <b>الزرقاء الثاني</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.090628404273,36.0816733162595" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_ff5c26b051879f91acc0c8ab745c4c7e.setContent(html_9dfe36edabff8009a88a89fb8cfe77ed);
+            
+        
+
+        marker_0e647e3372fb417606cbc3aa49d3f83b.bindPopup(popup_ff5c26b051879f91acc0c8ab745c4c7e)
+        ;
+
+        
+    
+    
+            var marker_75105831a59d7810fbeb47bb6f2407ca = L.marker(
+                [32.0128880795183, 36.0390888130748],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_88bed10b7d4b19c8842e2d96e7ef69f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_75105831a59d7810fbeb47bb6f2407ca.setIcon(icon_88bed10b7d4b19c8842e2d96e7ef69f7);
+        
+    
+        var popup_2f65e9de5b89ce4e79a2f0e1c73c0286 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6a3f05b99c3047fb53bca503176ca270 = $(`<div id="html_6a3f05b99c3047fb53bca503176ca270" style="width: 100.0%; height: 100.0%;">             <b>الرصيفة</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.0128880795183,36.0390888130748" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_2f65e9de5b89ce4e79a2f0e1c73c0286.setContent(html_6a3f05b99c3047fb53bca503176ca270);
+            
+        
+
+        marker_75105831a59d7810fbeb47bb6f2407ca.bindPopup(popup_2f65e9de5b89ce4e79a2f0e1c73c0286)
+        ;
+
+        
+    
+    
+            var marker_fe01b42ece241537c6f3e1fb44d87127 = L.marker(
+                [32.1408564328335, 36.0764320584747],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_9289e0cf1ede5741e3b3fa14f9f04342 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_fe01b42ece241537c6f3e1fb44d87127.setIcon(icon_9289e0cf1ede5741e3b3fa14f9f04342);
+        
+    
+        var popup_ee785a210127aa2641f6f5ec4d709e9c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_78042c9f6654d16690d39c3e130b7b6d = $(`<div id="html_78042c9f6654d16690d39c3e130b7b6d" style="width: 100.0%; height: 100.0%;">             <b>السخنه</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.1408564328335,36.0764320584747" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_ee785a210127aa2641f6f5ec4d709e9c.setContent(html_78042c9f6654d16690d39c3e130b7b6d);
+            
+        
+
+        marker_fe01b42ece241537c6f3e1fb44d87127.bindPopup(popup_ee785a210127aa2641f6f5ec4d709e9c)
+        ;
+
+        
+    
+    
+            var marker_27073e14728ff7a68b10f987fdadcd68 = L.marker(
+                [32.0610658987077, 36.0942029785692],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_083f6305000426b10edf7be9b8309940 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_27073e14728ff7a68b10f987fdadcd68.setIcon(icon_083f6305000426b10edf7be9b8309940);
+        
+    
+        var popup_73cc6dac8d5f2b3b25c6f8d302622b88 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9cc1442d8153a4e09946f59065c07a13 = $(`<div id="html_9cc1442d8153a4e09946f59065c07a13" style="width: 100.0%; height: 100.0%;">             <b>الضليل</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد              <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.0610658987077,36.0942029785692" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_73cc6dac8d5f2b3b25c6f8d302622b88.setContent(html_9cc1442d8153a4e09946f59065c07a13);
+            
+        
+
+        marker_27073e14728ff7a68b10f987fdadcd68.bindPopup(popup_73cc6dac8d5f2b3b25c6f8d302622b88)
+        ;
+
+        
+    
+    
+            var marker_32dbfa12822de51b27bb117f93c6ab95 = L.marker(
+                [32.0828158555172, 36.3655137666502],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_440e976b9a2a4eb712ffdb15477d4c8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_32dbfa12822de51b27bb117f93c6ab95.setIcon(icon_440e976b9a2a4eb712ffdb15477d4c8c);
+        
+    
+        var popup_4433604cc04b6d727ef21294206e094d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5b5656d1a8aaf1844c2b782280d20afd = $(`<div id="html_5b5656d1a8aaf1844c2b782280d20afd" style="width: 100.0%; height: 100.0%;">             <b>قصر الحلابات</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.0828158555172,36.3655137666502" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_4433604cc04b6d727ef21294206e094d.setContent(html_5b5656d1a8aaf1844c2b782280d20afd);
+            
+        
+
+        marker_32dbfa12822de51b27bb117f93c6ab95.bindPopup(popup_4433604cc04b6d727ef21294206e094d)
+        ;
+
+        
+    
+    
+            var marker_6598cd18ae19b7bbf876b928622011a1 = L.marker(
+                [32.0479264057686, 35.7403691520536],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_007037744fdc44e680e699b12d4eba09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6598cd18ae19b7bbf876b928622011a1.setIcon(icon_007037744fdc44e680e699b12d4eba09);
+        
+    
+        var popup_d20f4f529f3c706a5f123a92a9d8f260 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a9cbcb5093ce4fbcdea410748cf5bacb = $(`<div id="html_a9cbcb5093ce4fbcdea410748cf5bacb" style="width: 100.0%; height: 100.0%;">             <b>السلط</b><br>             مواقع و مساحات استثمار متوفرة: تم الرد فاكس                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.0479264057686,35.7403691520536" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_d20f4f529f3c706a5f123a92a9d8f260.setContent(html_a9cbcb5093ce4fbcdea410748cf5bacb);
+            
+        
+
+        marker_6598cd18ae19b7bbf876b928622011a1.bindPopup(popup_d20f4f529f3c706a5f123a92a9d8f260)
+        ;
+
+        
+    
+    
+            var marker_c9f7e45e5a23dcecf6822c941b0b8ae6 = L.marker(
+                [32.0086679042886, 35.7844961093727],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_1cc1e5afb5969a34cee9814ef38188a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c9f7e45e5a23dcecf6822c941b0b8ae6.setIcon(icon_1cc1e5afb5969a34cee9814ef38188a0);
+        
+    
+        var popup_fbd80d7aa20f46f0728c50913d4c8596 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9d818f621c871f3ecd265fdf90d19980 = $(`<div id="html_9d818f621c871f3ecd265fdf90d19980" style="width: 100.0%; height: 100.0%;">             <b>الفحيص</b><br>             مواقع و مساحات استثمار متوفرة: تم الرد فاكس             <br>مواقع / مساحات مستغله حاليا: مستغلة حاليا                          <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.0086679042886,35.7844961093727" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_fbd80d7aa20f46f0728c50913d4c8596.setContent(html_9d818f621c871f3ecd265fdf90d19980);
+            
+        
+
+        marker_c9f7e45e5a23dcecf6822c941b0b8ae6.bindPopup(popup_fbd80d7aa20f46f0728c50913d4c8596)
+        ;
+
+        
+    
+    
+            var marker_ec1c3f9107a6b5d924d3cd39116e82fc = L.marker(
+                [32.0586126904693, 35.8306351909212],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_62ad89808807bd3d0fdf72bfcd6cfb61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ec1c3f9107a6b5d924d3cd39116e82fc.setIcon(icon_62ad89808807bd3d0fdf72bfcd6cfb61);
+        
+    
+        var popup_5518b283944f417b930d29b693fb7cb5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4e72f0c768f9d7db3a68178278a02f62 = $(`<div id="html_4e72f0c768f9d7db3a68178278a02f62" style="width: 100.0%; height: 100.0%;">             <b>عين الباشا</b><br>                          <br>مواقع / مساحات مستغله حاليا: مستغلة حاليا                          <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.0586126904693,35.8306351909212" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_5518b283944f417b930d29b693fb7cb5.setContent(html_4e72f0c768f9d7db3a68178278a02f62);
+            
+        
+
+        marker_ec1c3f9107a6b5d924d3cd39116e82fc.bindPopup(popup_5518b283944f417b930d29b693fb7cb5)
+        ;
+
+        
+    
+    
+            var marker_bad3fe926a37ae7b8798fe9144ec6c3e = L.marker(
+                [32.1624298126845, 35.6207249046719],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_45072edb888fbd44529aeaca17b63c51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_bad3fe926a37ae7b8798fe9144ec6c3e.setIcon(icon_45072edb888fbd44529aeaca17b63c51);
+        
+    
+        var popup_59dc6d4509602c5285ca35bb37e1ac63 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ead4aa6dd53333c293408b49941c3524 = $(`<div id="html_ead4aa6dd53333c293408b49941c3524" style="width: 100.0%; height: 100.0%;">             <b>المعدي</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.1624298126845,35.6207249046719" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_59dc6d4509602c5285ca35bb37e1ac63.setContent(html_ead4aa6dd53333c293408b49941c3524);
+            
+        
+
+        marker_bad3fe926a37ae7b8798fe9144ec6c3e.bindPopup(popup_59dc6d4509602c5285ca35bb37e1ac63)
+        ;
+
+        
+    
+    
+            var marker_6f3afbfb42ff85973f3ff8de23227a72 = L.marker(
+                [31.9153296507808, 35.6110276100812],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_18a2a35ae65c4f3ee6fbea33ca373845 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_6f3afbfb42ff85973f3ff8de23227a72.setIcon(icon_18a2a35ae65c4f3ee6fbea33ca373845);
+        
+    
+        var popup_d0e049688a96c85ea3652280877b68b3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1154461af0610c710fceed4a509d5031 = $(`<div id="html_1154461af0610c710fceed4a509d5031" style="width: 100.0%; height: 100.0%;">             <b>الشونه الجنوبية</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد              <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.9153296507808,35.6110276100812" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_d0e049688a96c85ea3652280877b68b3.setContent(html_1154461af0610c710fceed4a509d5031);
+            
+        
+
+        marker_6f3afbfb42ff85973f3ff8de23227a72.bindPopup(popup_d0e049688a96c85ea3652280877b68b3)
+        ;
+
+        
+    
+    
+            var marker_2fad0c9b69724460c48f4db99c517f0a = L.marker(
+                [31.9304786292887, 35.7181165090534],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_cc368d3657988a786956dfda89aee70d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2fad0c9b69724460c48f4db99c517f0a.setIcon(icon_cc368d3657988a786956dfda89aee70d);
+        
+    
+        var popup_ed63f73aed789256200ba7e475211ac2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2748f2fb5caddfb67195725259639dfb = $(`<div id="html_2748f2fb5caddfb67195725259639dfb" style="width: 100.0%; height: 100.0%;">             <b>السرو</b><br>                          <br>مواقع / مساحات مستغله حاليا: مواقع مستغلة                          <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.9304786292887,35.7181165090534" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_ed63f73aed789256200ba7e475211ac2.setContent(html_2748f2fb5caddfb67195725259639dfb);
+            
+        
+
+        marker_2fad0c9b69724460c48f4db99c517f0a.bindPopup(popup_ed63f73aed789256200ba7e475211ac2)
+        ;
+
+        
+    
+    
+            var marker_fc3ffe4ccd5b497698cd40d164cdf863 = L.marker(
+                [32.1525581878286, 35.6999847697764],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_b9fd53877c28675561ce95176fa687f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_fc3ffe4ccd5b497698cd40d164cdf863.setIcon(icon_b9fd53877c28675561ce95176fa687f1);
+        
+    
+        var popup_1629a7a6c53dd031745174e035c43026 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_86babff778773163838b0868cfd0c41f = $(`<div id="html_86babff778773163838b0868cfd0c41f" style="width: 100.0%; height: 100.0%;">             <b>الصبيحي</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد              <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=32.1525581878286,35.6999847697764" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_1629a7a6c53dd031745174e035c43026.setContent(html_86babff778773163838b0868cfd0c41f);
+            
+        
+
+        marker_fc3ffe4ccd5b497698cd40d164cdf863.bindPopup(popup_1629a7a6c53dd031745174e035c43026)
+        ;
+
+        
+    
+    
+            var marker_9891c85bcc9ae9761b6be165d3b1206f = L.marker(
+                [31.9904479521464, 35.6985057645039],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_e0108e97989253f700cba5f0941ff665 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_9891c85bcc9ae9761b6be165d3b1206f.setIcon(icon_e0108e97989253f700cba5f0941ff665);
+        
+    
+        var popup_08d61387eff8fdeb5ad2db0853430c01 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_36e7e93f14afad45eae797736704be91 = $(`<div id="html_36e7e93f14afad45eae797736704be91" style="width: 100.0%; height: 100.0%;">             <b>عبرت ويرقا</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد              <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.9904479521464,35.6985057645039" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_08d61387eff8fdeb5ad2db0853430c01.setContent(html_36e7e93f14afad45eae797736704be91);
+            
+        
+
+        marker_9891c85bcc9ae9761b6be165d3b1206f.bindPopup(popup_08d61387eff8fdeb5ad2db0853430c01)
+        ;
+
+        
+    
+    
+            var marker_6bd35fc1fb021bec9ad0caba630141d9 = L.marker(
+                [31.7220358768916, 35.7927028557012],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_6e0c76402342746e2698c7bcf197fe4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_6bd35fc1fb021bec9ad0caba630141d9.setIcon(icon_6e0c76402342746e2698c7bcf197fe4d);
+        
+    
+        var popup_e54b3fb8622d0c83988b42c2f9612095 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_89aab8464c7e009b065ac0e8b1dd1180 = $(`<div id="html_89aab8464c7e009b065ac0e8b1dd1180" style="width: 100.0%; height: 100.0%;">             <b>مادبا</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا بوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.7220358768916,35.7927028557012" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_e54b3fb8622d0c83988b42c2f9612095.setContent(html_89aab8464c7e009b065ac0e8b1dd1180);
+            
+        
+
+        marker_6bd35fc1fb021bec9ad0caba630141d9.bindPopup(popup_e54b3fb8622d0c83988b42c2f9612095)
+        ;
+
+        
+    
+    
+            var marker_848c4d62c95c9329387632d2802e7aec = L.marker(
+                [31.501813491018, 35.7833012791481],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_0eb56c617e54f0e315c4042300e7c4d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_848c4d62c95c9329387632d2802e7aec.setIcon(icon_0eb56c617e54f0e315c4042300e7c4d1);
+        
+    
+        var popup_6aed63f43682f4ebbe45ad890554d2c2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5894a6726b7d91e4e7b198978ab5eb0b = $(`<div id="html_5894a6726b7d91e4e7b198978ab5eb0b" style="width: 100.0%; height: 100.0%;">             <b>ذيبان</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا بوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.501813491018,35.7833012791481" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_6aed63f43682f4ebbe45ad890554d2c2.setContent(html_5894a6726b7d91e4e7b198978ab5eb0b);
+            
+        
+
+        marker_848c4d62c95c9329387632d2802e7aec.bindPopup(popup_6aed63f43682f4ebbe45ad890554d2c2)
+        ;
+
+        
+    
+    
+            var marker_91c30f2281f9ae4d43181161b115a1dd = L.marker(
+                [31.4155937366065, 35.7702863854038],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_b125a784a5e328489a28d93e149a3a12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_91c30f2281f9ae4d43181161b115a1dd.setIcon(icon_b125a784a5e328489a28d93e149a3a12);
+        
+    
+        var popup_621aad8d64d1cc57e50196b005ccd8c4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b0dec28ec600ade6187414f5d047f02a = $(`<div id="html_b0dec28ec600ade6187414f5d047f02a" style="width: 100.0%; height: 100.0%;">             <b>سوق الكرك </b><br>             مواقع و مساحات استثمار متوفرة: ادوات منزلية - ١٢٠ م  خارج العهده                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.4155937366065,35.7702863854038" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_621aad8d64d1cc57e50196b005ccd8c4.setContent(html_b0dec28ec600ade6187414f5d047f02a);
+            
+        
+
+        marker_91c30f2281f9ae4d43181161b115a1dd.bindPopup(popup_621aad8d64d1cc57e50196b005ccd8c4)
+        ;
+
+        
+    
+    
+            var marker_a661a9e60eb2d06624ac204e63509338 = L.marker(
+                [31.0632861366293, 35.6998083552917],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_51b4d3cf2129d9a66519d411c13ddbd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a661a9e60eb2d06624ac204e63509338.setIcon(icon_51b4d3cf2129d9a66519d411c13ddbd6);
+        
+    
+        var popup_1bf20c7b85a59eda0198610ada703dab = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0993e5dc49129089a1aa0ca3f034c781 = $(`<div id="html_0993e5dc49129089a1aa0ca3f034c781" style="width: 100.0%; height: 100.0%;">             <b>سوق المزار الجنوبي</b><br>                          <br>مواقع / مساحات مستغله حاليا: مستغلة حاليا             <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.0632861366293,35.6998083552917" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_1bf20c7b85a59eda0198610ada703dab.setContent(html_0993e5dc49129089a1aa0ca3f034c781);
+            
+        
+
+        marker_a661a9e60eb2d06624ac204e63509338.bindPopup(popup_1bf20c7b85a59eda0198610ada703dab)
+        ;
+
+        
+    
+    
+            var marker_dccbc4e5bbe66248c271b4c644caaf5f = L.marker(
+                [31.0657617150372, 35.4758869091321],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_ac6e8fdd5a0a440bcdc8d836ca005dfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_dccbc4e5bbe66248c271b4c644caaf5f.setIcon(icon_ac6e8fdd5a0a440bcdc8d836ca005dfc);
+        
+    
+        var popup_572eaa7d997ce56fb1f8f34a31487ae2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d96c89e9b65581edd78ea1e063bf30d5 = $(`<div id="html_d96c89e9b65581edd78ea1e063bf30d5" style="width: 100.0%; height: 100.0%;">             <b>سوق غور الصافي</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.0657617150372,35.4758869091321" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_572eaa7d997ce56fb1f8f34a31487ae2.setContent(html_d96c89e9b65581edd78ea1e063bf30d5);
+            
+        
+
+        marker_dccbc4e5bbe66248c271b4c644caaf5f.bindPopup(popup_572eaa7d997ce56fb1f8f34a31487ae2)
+        ;
+
+        
+    
+    
+            var marker_6928d9bf57e0194eed333fe5c7ef7874 = L.marker(
+                [31.3299681354945, 35.6557499247342],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_f6d74fd644ed8db18e7031aa40656b9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6928d9bf57e0194eed333fe5c7ef7874.setIcon(icon_f6d74fd644ed8db18e7031aa40656b9b);
+        
+    
+        var popup_68e3d39ca514f81428620d890f71deec = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7d5268323edea5f24bcecb001bdd5b65 = $(`<div id="html_7d5268323edea5f24bcecb001bdd5b65" style="width: 100.0%; height: 100.0%;">             <b>سوق صرفا</b><br>             مواقع و مساحات استثمار متوفرة: المنطقة بحاجة لدجاج طازج ٣ م                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.3299681354945,35.6557499247342" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_68e3d39ca514f81428620d890f71deec.setContent(html_7d5268323edea5f24bcecb001bdd5b65);
+            
+        
+
+        marker_6928d9bf57e0194eed333fe5c7ef7874.bindPopup(popup_68e3d39ca514f81428620d890f71deec)
+        ;
+
+        
+    
+    
+            var marker_8f9b1c13f677a9a2b6d6e934bcd06e75 = L.marker(
+                [31.3144474849947, 35.7466583644053],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_6abbc025dee1e97cba1bb934e74a47fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8f9b1c13f677a9a2b6d6e934bcd06e75.setIcon(icon_6abbc025dee1e97cba1bb934e74a47fb);
+        
+    
+        var popup_c46f37ecd8608df898e9dbb34d0e5899 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_330fb9047f4d384e468e59107c3abdf1 = $(`<div id="html_330fb9047f4d384e468e59107c3abdf1" style="width: 100.0%; height: 100.0%;">             <b>سوق القصر</b><br>             مواقع و مساحات استثمار متوفرة:                            <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد              <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.3144474849947,35.7466583644053" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_c46f37ecd8608df898e9dbb34d0e5899.setContent(html_330fb9047f4d384e468e59107c3abdf1);
+            
+        
+
+        marker_8f9b1c13f677a9a2b6d6e934bcd06e75.bindPopup(popup_c46f37ecd8608df898e9dbb34d0e5899)
+        ;
+
+        
+    
+    
+            var marker_f66a32f8283814c3884cccae0cc4367d = L.marker(
+                [31.2561237949667, 35.5200896921838],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_fd8cc23f7ea4812879f346325c3ae96e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_f66a32f8283814c3884cccae0cc4367d.setIcon(icon_fd8cc23f7ea4812879f346325c3ae96e);
+        
+    
+        var popup_9191457f1dd62e242adab7290747145d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_46c5ebbc8e085f046a1625794df10159 = $(`<div id="html_46c5ebbc8e085f046a1625794df10159" style="width: 100.0%; height: 100.0%;">             <b>سوق غور المزرعه</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.2561237949667,35.5200896921838" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_9191457f1dd62e242adab7290747145d.setContent(html_46c5ebbc8e085f046a1625794df10159);
+            
+        
+
+        marker_f66a32f8283814c3884cccae0cc4367d.bindPopup(popup_9191457f1dd62e242adab7290747145d)
+        ;
+
+        
+    
+    
+            var marker_bf234078a1e369e6b24bd1e1fbaaedf6 = L.marker(
+                [31.0328039435921, 35.7316791973182],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_9abaefe96155ef6b27a82270b67a7510 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bf234078a1e369e6b24bd1e1fbaaedf6.setIcon(icon_9abaefe96155ef6b27a82270b67a7510);
+        
+    
+        var popup_c06892fd89d53bcdeda18dd08daa2260 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_33fc0e7b9dea8137e91159b432f8e9cf = $(`<div id="html_33fc0e7b9dea8137e91159b432f8e9cf" style="width: 100.0%; height: 100.0%;">             <b>سوق مؤاب</b><br>             مواقع و مساحات استثمار متوفرة: تم الرد فاكس                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.0328039435921,35.7316791973182" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_c06892fd89d53bcdeda18dd08daa2260.setContent(html_33fc0e7b9dea8137e91159b432f8e9cf);
+            
+        
+
+        marker_bf234078a1e369e6b24bd1e1fbaaedf6.bindPopup(popup_c06892fd89d53bcdeda18dd08daa2260)
+        ;
+
+        
+    
+    
+            var marker_b73ceb853d70e0630aa5d3958d91d4dd = L.marker(
+                [31.09084244542, 35.6953431247884],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_b1d3be9e3fcc2d6f015b5ed19a9251be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b73ceb853d70e0630aa5d3958d91d4dd.setIcon(icon_b1d3be9e3fcc2d6f015b5ed19a9251be);
+        
+    
+        var popup_7ac1790830662010bd5123caf547b2cb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_44899579504941aa8b4b9f9639b89c6c = $(`<div id="html_44899579504941aa8b4b9f9639b89c6c" style="width: 100.0%; height: 100.0%;">             <b>سوق مؤته</b><br>             مواقع و مساحات استثمار متوفرة: دجاج الطاحونه سابقا٤ م                                        <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=31.09084244542,35.6953431247884" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_7ac1790830662010bd5123caf547b2cb.setContent(html_44899579504941aa8b4b9f9639b89c6c);
+            
+        
+
+        marker_b73ceb853d70e0630aa5d3958d91d4dd.bindPopup(popup_7ac1790830662010bd5123caf547b2cb)
+        ;
+
+        
+    
+    
+            var marker_9e9e841c5e1329feebbdbfdc85740cc5 = L.marker(
+                [30.9941395344158, 35.7707233204712],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_fb240fc698988002f7c42e1927e0d7a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_9e9e841c5e1329feebbdbfdc85740cc5.setIcon(icon_fb240fc698988002f7c42e1927e0d7a6);
+        
+    
+        var popup_d471b492ad3cabfd01b9b4016732125c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_527af7dbeb7136aacf713c6ab073c8d0 = $(`<div id="html_527af7dbeb7136aacf713c6ab073c8d0" style="width: 100.0%; height: 100.0%;">             <b>سوق ذات راس</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد              <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=30.9941395344158,35.7707233204712" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_d471b492ad3cabfd01b9b4016732125c.setContent(html_527af7dbeb7136aacf713c6ab073c8d0);
+            
+        
+
+        marker_9e9e841c5e1329feebbdbfdc85740cc5.bindPopup(popup_d471b492ad3cabfd01b9b4016732125c)
+        ;
+
+        
+    
+    
+            var marker_1f0d93581f81a50968d5b4dc5e1837b3 = L.marker(
+                [30.7900194331955, 35.5935754297355],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_0b15622dc49931d946c02d212fd54dd4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f0d93581f81a50968d5b4dc5e1837b3.setIcon(icon_0b15622dc49931d946c02d212fd54dd4);
+        
+    
+        var popup_4d165195ec39a738ffacf30c5018807c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3ec2e330e34b6205c02d0026dd282ea0 = $(`<div id="html_3ec2e330e34b6205c02d0026dd282ea0" style="width: 100.0%; height: 100.0%;">             <b>سوق عين البيضا</b><br>                          <br>مواقع / مساحات مستغله حاليا: مساحة مستغلة                          <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=30.7900194331955,35.5935754297355" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_4d165195ec39a738ffacf30c5018807c.setContent(html_3ec2e330e34b6205c02d0026dd282ea0);
+            
+        
+
+        marker_1f0d93581f81a50968d5b4dc5e1837b3.bindPopup(popup_4d165195ec39a738ffacf30c5018807c)
+        ;
+
+        
+    
+    
+            var marker_0a7e4272bd36546b31c16b51bf44962a = L.marker(
+                [30.8422058988111, 35.6127931139762],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_2ddc47353b9dbc80ea0736bd72fe1e0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0a7e4272bd36546b31c16b51bf44962a.setIcon(icon_2ddc47353b9dbc80ea0736bd72fe1e0a);
+        
+    
+        var popup_c06e9770ddf363943762d8323209a5e3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_93265daf1ee711c03aefca2748297174 = $(`<div id="html_93265daf1ee711c03aefca2748297174" style="width: 100.0%; height: 100.0%;">             <b>سوق الطفيلة</b><br>                          <br>مواقع / مساحات مستغله حاليا: مساحة مستغلة                          <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=30.8422058988111,35.6127931139762" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_c06e9770ddf363943762d8323209a5e3.setContent(html_93265daf1ee711c03aefca2748297174);
+            
+        
+
+        marker_0a7e4272bd36546b31c16b51bf44962a.bindPopup(popup_c06e9770ddf363943762d8323209a5e3)
+        ;
+
+        
+    
+    
+            var marker_1c8ebfe9098e1f56ab0dc008026329c0 = L.marker(
+                [30.7315192669528, 35.6124569634027],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_44fe54aef9a51f8e78510f297e794514 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_1c8ebfe9098e1f56ab0dc008026329c0.setIcon(icon_44fe54aef9a51f8e78510f297e794514);
+        
+    
+        var popup_3030ad994b19f49440decd6f930fedb0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fd2bb1a5b150a2d115b0205d88606d16 = $(`<div id="html_fd2bb1a5b150a2d115b0205d88606d16" style="width: 100.0%; height: 100.0%;">             <b>سوق بصيرا</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد              <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=30.7315192669528,35.6124569634027" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_3030ad994b19f49440decd6f930fedb0.setContent(html_fd2bb1a5b150a2d115b0205d88606d16);
+            
+        
+
+        marker_1c8ebfe9098e1f56ab0dc008026329c0.bindPopup(popup_3030ad994b19f49440decd6f930fedb0)
+        ;
+
+        
+    
+    
+            var marker_e4d064ad632443afdc5978f354174ca8 = L.marker(
+                [30.1973479248699, 35.7368868797685],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_e823459963972f830b6d7b977b47e89e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e4d064ad632443afdc5978f354174ca8.setIcon(icon_e823459963972f830b6d7b977b47e89e);
+        
+    
+        var popup_7b8eb3e2bd2c751a760c8f4a03d95d1e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_034c18afe1e62bcf6503192d62588835 = $(`<div id="html_034c18afe1e62bcf6503192d62588835" style="width: 100.0%; height: 100.0%;">             <b>سوق معان</b><br>             مواقع و مساحات استثمار متوفرة:                            <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=30.1973479248699,35.7368868797685" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_7b8eb3e2bd2c751a760c8f4a03d95d1e.setContent(html_034c18afe1e62bcf6503192d62588835);
+            
+        
+
+        marker_e4d064ad632443afdc5978f354174ca8.bindPopup(popup_7b8eb3e2bd2c751a760c8f4a03d95d1e)
+        ;
+
+        
+    
+    
+            var marker_2845f06989adb7e7a1971973c53b02b4 = L.marker(
+                [30.2487243149885, 35.4678422935563],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_f576d3b7873d24de180b5012d4054977 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2845f06989adb7e7a1971973c53b02b4.setIcon(icon_f576d3b7873d24de180b5012d4054977);
+        
+    
+        var popup_64c3a5f084484c14192ddcfe440d98f0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e73c7bf94eeaf844f5531b545d12c7cf = $(`<div id="html_e73c7bf94eeaf844f5531b545d12c7cf" style="width: 100.0%; height: 100.0%;">             <b>سوق الطفيلة الجنوبية</b><br>             مواقع و مساحات استثمار متوفرة: مساحة ٤.٦٥ داخل العهد                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=30.2487243149885,35.4678422935563" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_64c3a5f084484c14192ddcfe440d98f0.setContent(html_e73c7bf94eeaf844f5531b545d12c7cf);
+            
+        
+
+        marker_2845f06989adb7e7a1971973c53b02b4.bindPopup(popup_64c3a5f084484c14192ddcfe440d98f0)
+        ;
+
+        
+    
+    
+            var marker_ea93fb888e621a63cc5e48bdaa97fd2e = L.marker(
+                [30.1160044885499, 35.5266632854038],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_50a25d7eab23e9cf9cfaeb5147574bb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ea93fb888e621a63cc5e48bdaa97fd2e.setIcon(icon_50a25d7eab23e9cf9cfaeb5147574bb4);
+        
+    
+        var popup_4fb6366b22c0aec7982aa13ecbddadf0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_02d44aad5e7632d344751469d9087ad1 = $(`<div id="html_02d44aad5e7632d344751469d9087ad1" style="width: 100.0%; height: 100.0%;">             <b>سوق المريغة</b><br>             مواقع و مساحات استثمار متوفرة: ٤ م داخل العهد                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=30.1160044885499,35.5266632854038" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_4fb6366b22c0aec7982aa13ecbddadf0.setContent(html_02d44aad5e7632d344751469d9087ad1);
+            
+        
+
+        marker_ea93fb888e621a63cc5e48bdaa97fd2e.bindPopup(popup_4fb6366b22c0aec7982aa13ecbddadf0)
+        ;
+
+        
+    
+    
+            var marker_9017cd490011c6cdaf26cffcec31eb38 = L.marker(
+                [30.3243657091183, 35.4815047309157],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_776f1ab5acdcc34cf7754d76214206f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9017cd490011c6cdaf26cffcec31eb38.setIcon(icon_776f1ab5acdcc34cf7754d76214206f5);
+        
+    
+        var popup_5597f97ff7ab2d9d358da22c32bf7a6a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_76996b0dbe23602e22c0e34f0244fb6b = $(`<div id="html_76996b0dbe23602e22c0e34f0244fb6b" style="width: 100.0%; height: 100.0%;">             <b>سوق وادي موسى</b><br>             مواقع و مساحات استثمار متوفرة:               <br>مواقع / مساحات مستغله حاليا: ٣.٧٥ مستغل                          <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=30.3243657091183,35.4815047309157" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_5597f97ff7ab2d9d358da22c32bf7a6a.setContent(html_76996b0dbe23602e22c0e34f0244fb6b);
+            
+        
+
+        marker_9017cd490011c6cdaf26cffcec31eb38.bindPopup(popup_5597f97ff7ab2d9d358da22c32bf7a6a)
+        ;
+
+        
+    
+    
+            var marker_a98a69f17ce10570582c950f5628a33f = L.marker(
+                [30.3824769545535, 35.6032058588953],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_01e668261b63a39971cbe518221ddd27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a98a69f17ce10570582c950f5628a33f.setIcon(icon_01e668261b63a39971cbe518221ddd27);
+        
+    
+        var popup_dbbc51898fca961aa10bfa3bbe894286 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e0b74ad6f0ccf95b7a13ab610b85d519 = $(`<div id="html_e0b74ad6f0ccf95b7a13ab610b85d519" style="width: 100.0%; height: 100.0%;">             <b>سوق الاشعري</b><br>             مواقع و مساحات استثمار متوفرة: ....                                       <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=30.3824769545535,35.6032058588953" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_dbbc51898fca961aa10bfa3bbe894286.setContent(html_e0b74ad6f0ccf95b7a13ab610b85d519);
+            
+        
+
+        marker_a98a69f17ce10570582c950f5628a33f.bindPopup(popup_dbbc51898fca961aa10bfa3bbe894286)
+        ;
+
+        
+    
+    
+            var marker_f1028cf1dac287c0d53e7ae8887d8915 = L.marker(
+                [30.2683911317834, 35.5406980194279],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_dbb022081f7abc1eda8f2c7ac8cead24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_f1028cf1dac287c0d53e7ae8887d8915.setIcon(icon_dbb022081f7abc1eda8f2c7ac8cead24);
+        
+    
+        var popup_c2174811628d2b036cbc0bce67729679 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1a5413f951b0135be39ba7bba1b249c7 = $(`<div id="html_1a5413f951b0135be39ba7bba1b249c7" style="width: 100.0%; height: 100.0%;">             <b>سوق قرى النعيمات</b><br>                                       <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد             <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=30.2683911317834,35.5406980194279" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_c2174811628d2b036cbc0bce67729679.setContent(html_1a5413f951b0135be39ba7bba1b249c7);
+            
+        
+
+        marker_f1028cf1dac287c0d53e7ae8887d8915.bindPopup(popup_c2174811628d2b036cbc0bce67729679)
+        ;
+
+        
+    
+    
+            var marker_4db934300793440cb0e9ef17202019a1 = L.marker(
+                [29.6494348931881, 35.0020862057278],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_276a3ef7d10e0067efc00bdb8ca75edf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4db934300793440cb0e9ef17202019a1.setIcon(icon_276a3ef7d10e0067efc00bdb8ca75edf);
+        
+    
+        var popup_cd8768373dc4388247a14b249a5d2c91 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_33b96112369d99833fde2031767a6dfa = $(`<div id="html_33b96112369d99833fde2031767a6dfa" style="width: 100.0%; height: 100.0%;">             <b>سوق العقبة </b><br>             مواقع و مساحات استثمار متوفرة: بانتظار الرد             <br>مواقع / مساحات مستغله حاليا: استغلال - شركة امنية                          <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=29.6494348931881,35.0020862057278" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_cd8768373dc4388247a14b249a5d2c91.setContent(html_33b96112369d99833fde2031767a6dfa);
+            
+        
+
+        marker_4db934300793440cb0e9ef17202019a1.bindPopup(popup_cd8768373dc4388247a14b249a5d2c91)
+        ;
+
+        
+    
+    
+            var marker_1c15e53b02dcd4dcfb1c22b4db7ebd40 = L.marker(
+                [29.8299447992295, 35.3105248120837],
+                {}
+            ).addTo(map_abee0bcd99798f5c775c2d805cdc713a);
+        
+    
+            var icon_80b9fa7870bdef614e3ff2e0163a57be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1c15e53b02dcd4dcfb1c22b4db7ebd40.setIcon(icon_80b9fa7870bdef614e3ff2e0163a57be);
+        
+    
+        var popup_6a5ef8720b4be9922c0b90280e5e71ea = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f79e59f564bb8dd22f5eaf632cf8e105 = $(`<div id="html_f79e59f564bb8dd22f5eaf632cf8e105" style="width: 100.0%; height: 100.0%;">             <b>سوق القويرة</b><br>             مواقع و مساحات استثمار متوفرة:                            <br>لا يوجد مواقع و مساحات للاستغلال: لا يوجد              <br><a href="https://www.google.com/maps/dir/?api=1&origin=YOUR_LOCATION&destination=29.8299447992295,35.3105248120837" target="_blank">احصل على الاتجاهات إلى هنا</a>         </div>`)[0];
+                popup_6a5ef8720b4be9922c0b90280e5e71ea.setContent(html_f79e59f564bb8dd22f5eaf632cf8e105);
+            
+        
+
+        marker_1c15e53b02dcd4dcfb1c22b4db7ebd40.bindPopup(popup_6a5ef8720b4be9922c0b90280e5e71ea)
+        ;
+
+        
+    
+</script>
+</html>
